@@ -9,7 +9,6 @@ $(document).ready(function () {
         let parsedCode = parseCode(codeToParse);
         arrayB = RUN(parsedCode);
         Table = makeTableHTML(arrayB);
-        window.alert(arrayB.toString());
         printData(Table);
         $('#parsedCode').val(JSON.stringify(parsedCode, null, 2));
     });
